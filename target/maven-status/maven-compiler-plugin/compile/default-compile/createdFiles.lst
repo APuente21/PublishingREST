@@ -1,0 +1,4 @@
+com\puente\service\BookServiceImp.class
+com\puente\repository\BookRepository.class
+com\puente\domain\Book.class
+com\puente\service\BookService.class

@@ -20,7 +20,7 @@
         destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
         <property name="url"
-            value="jdbc:mysql://localhost:3306/RestTopicDB" />
+            value="jdbc:mysql://localhost:3306/PublishingREST" />
         <property name="username" value="root" />
         <property name="password" value="Selyna@123" />
     </bean>
@@ -36,7 +36,7 @@
         <property name="jpaVendorAdapter">
             <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
         </property>
-        <property name="packagesToScan" value="com.apress.prospring4.ch12"/>
+        <property name="packagesToScan" value="com.puente"/>
         <property name="jpaProperties">
             <props>
                 <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
@@ -50,7 +50,7 @@
 
     <context:annotation-config/>
 
-    <jpa:repositories base-package="com.apress.prospring4.ch12"
+    <jpa:repositories base-package="com.puente"
                       entity-manager-factory-ref="emf"
                       transaction-manager-ref="transactionManager"/>
 </beans>

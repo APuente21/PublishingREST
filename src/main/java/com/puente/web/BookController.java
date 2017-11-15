@@ -22,19 +22,19 @@ public class BookController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String list(Model uiModel) {
-        logger.info("Listing contacts");
+        logger.info("Listing Book");
 
         List<Book> books = bookService.findAll();
         
         uiModel.addAttribute("books", books);
 
-        logger.info("No. of contacts: " + books.size());
+        logger.info("No. of books: " + books.size());
 
         return "books/list";
     }
    
     @Autowired
-    public void setContactService(BookService bookService) {
+    public void setBookService(BookService bookService) {
         this.bookService = bookService;
     }
 

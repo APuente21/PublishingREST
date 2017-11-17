@@ -1,4 +1,4 @@
-package com.puente.service;
+package com.puente;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,8 +6,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import com.google.common.collect.Lists;
-import com.puente.domain.Book;
-import com.puente.repository.BookRepository;
 
 @Repository
 @Transactional

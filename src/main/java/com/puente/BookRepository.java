@@ -1,7 +1,6 @@
-package com.puente.repository;
+package com.puente;
 
 import org.springframework.data.repository.CrudRepository;
-import com.puente.domain.Book;
 
 public interface BookRepository extends CrudRepository<Book, Long> {
 }

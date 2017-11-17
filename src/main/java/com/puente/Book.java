@@ -1,4 +1,4 @@
-package com.puente.domain;
+package com.puente;
 
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Column;
@@ -54,7 +54,7 @@ public class Book {
         return this.isbn;
     }
 
-    public void setIsbn(String isbn) {
+    public void setISBN(String isbn) {
         this.isbn = isbn;
     }
 

@@ -1,5 +1,5 @@
-com\puente\service\BookServiceImp.class
-com\puente\repository\BookRepository.class
-com\puente\domain\Book.class
-com\puente\web\BookController.class
-com\puente\service\BookService.class
+com\puente\BookService.class
+com\puente\Book.class
+com\puente\BookServiceImp.class
+com\puente\BookController.class
+com\puente\BookRepository.class

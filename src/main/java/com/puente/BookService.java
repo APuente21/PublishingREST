@@ -1,7 +1,6 @@
-package com.puente.service;
+package com.puente;
 
 import java.util.List;
-import com.puente.domain.Book;
 
 public interface BookService {
 	List<Book> findAll();

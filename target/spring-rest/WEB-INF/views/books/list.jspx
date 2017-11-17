@@ -26,7 +26,7 @@
 					<tr>
 						<td>${book.id}</td>
 						<td>${book.categoryName}</td>
-						<td>${book.isbn}</td>
+						<td>${book.ISBN}</td>
 						<td>${book.title}</td>
 						<td>${book.publisher}</td>
 						<td>${book.price}</td>

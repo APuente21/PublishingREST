@@ -1,6 +1,9 @@
 package com.puente;
 
 import static javax.persistence.GenerationType.IDENTITY;
+
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,7 +13,8 @@ import javax.persistence.Version;
 
 @Entity
 @Table(name = "book")
-public class Book {
+public class Book implements Serializable{
+	private static final long serialVersionUID = 9067534668868356291L;
 	private Long id;
     private int version;
     private String categoryName;

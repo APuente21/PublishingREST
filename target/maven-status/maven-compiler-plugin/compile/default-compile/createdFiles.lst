@@ -1,5 +1,9 @@
 com\puente\BookService.class
-com\puente\Book.class
+com\puente\UrlUtil.class
 com\puente\BookServiceImp.class
 com\puente\BookController.class
+com\puente\BookGrid.class
+com\puente\Book.class
+com\puente\MyWebAppInitializer.class
 com\puente\BookRepository.class
+com\puente\Message.class

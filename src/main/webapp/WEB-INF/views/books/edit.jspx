@@ -31,7 +31,7 @@
             </c:if>
 
             <form:label path="categoryName">
-                ${labelBookCategory}*
+                ${labelBookCategory}
             </form:label>
             <form:input path="categoryName" />
             <div>
@@ -49,7 +49,7 @@
             <p/>
 
             <form:label path="title">
-                ${labelBookTitle}
+                ${labelBookTitle}*
             </form:label>
             <form:input path="title"/>
             <div>
@@ -67,7 +67,7 @@
             <p/>
 
             <form:label path="price">
-                ${labelBookPrice}
+                ${labelBookPrice}*
             </form:label>
             <form:input path="price"/>
             <div>

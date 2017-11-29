@@ -10,6 +10,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Version;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 @Table(name = "book")
@@ -53,6 +56,7 @@ public class Book implements Serializable{
         this.categoryName = categoryName;
     }
 
+    @NotEmpty(message="{validation.isbn.NotEmpty.message}")
     @Column(name = "ISBN")
     public String getIsbn() {
         return this.isbn;
@@ -62,6 +66,7 @@ public class Book implements Serializable{
         this.isbn = isbn;
     }
 
+    @NotEmpty(message="{validation.title.NotEmpty.message}")
     @Column(name = "TITLE")
     public String getTitle() {
         return this.title;
@@ -80,7 +85,7 @@ public class Book implements Serializable{
         this.publisher = publisher;
     }
     
-    
+    @NotNull
     @Column(name = "PRICE")
     public float getPrice() {
         return this.price;

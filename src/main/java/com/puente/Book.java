@@ -54,11 +54,11 @@ public class Book implements Serializable{
     }
 
     @Column(name = "ISBN")
-    public String getISBN() {
+    public String getIsbn() {
         return this.isbn;
     }
 
-    public void setISBN(String isbn) {
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
 

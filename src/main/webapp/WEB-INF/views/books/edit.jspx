@@ -30,12 +30,12 @@
                 <div id="message" class="${message.type}">${message.message}</div>
             </c:if>
 
-            <form:label path="category">
+            <form:label path="categoryName">
                 ${labelBookCategory}*
             </form:label>
-            <form:input path="category" />
+            <form:input path="categoryName" />
             <div>
-                <form:errors path="category" cssClass="error" />
+                <form:errors path="categoryName" cssClass="error" />
             </div>
             <p/>
 

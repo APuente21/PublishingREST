@@ -39,7 +39,7 @@ public class BookController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String list(Model uiModel) {
-        logger.info("Listing contacts");
+        logger.info("Listing books");
 
         List<Book> books = bookService.findAll();
         uiModel.addAttribute("books", books);
@@ -99,7 +99,7 @@ public class BookController {
 
         logger.info("Book id: " + book.getId());
 
-        //bookService.save(book);
+        bookService.save(book);
         return "redirect:/books/";
     }
 
@@ -138,7 +138,7 @@ public class BookController {
         // Constructs page request for current page
         // Note: page number for Spring Data JPA starts with 0, while jqGrid starts with 1
         PageRequest pageRequest = null;
-
+       // sort = "categoryName";
         if (sort != null) {
             pageRequest = new PageRequest(page - 1, rows, sort);
         } else {

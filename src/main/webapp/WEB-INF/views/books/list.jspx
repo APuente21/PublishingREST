@@ -25,7 +25,7 @@
                 colNames:['${labelBookCategory}', '${labelBookIsbn}', '${labelBookTitle}', 
                     '${labelBookPublisher}', '${labelBookPrice}'],
                 colModel :[
-                    {name:'category', index:'category', width:150},
+                    {name:'categoryName', index:'categoryName', width:150},
                     {name:'isbn', index:'isbn', width:100},
                     {name:'title', index:'title', width:100},
                     {name:'publisher', index:'publisher', width:100},
@@ -43,7 +43,7 @@
                 pager: '#pager',
                 rowNum:10,
                 rowList:[10,20,30],
-                sortname: 'category',
+                sortname: 'categoryName',
                 sortorder: 'asc',
                 viewrecords: true,
                 gridview: true,

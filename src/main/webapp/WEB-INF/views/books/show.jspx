@@ -29,7 +29,7 @@
         <table>
             <tr>
                 <td>${labelBookCategory}</td>
-                <td>${book.category}</td>
+                <td>${book.categoryName}</td>
             </tr>
             <tr>
                 <td>${labelBookIsbn}</td>

@@ -79,7 +79,8 @@ public class Book implements Serializable{
     public void setPublisher(String publisher) {
         this.publisher = publisher;
     }
-
+    
+    
     @Column(name = "PRICE")
     public float getPrice() {
         return this.price;

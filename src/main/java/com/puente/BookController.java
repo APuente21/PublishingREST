@@ -99,44 +99,10 @@ public class BookController {
 
         logger.info("Book id: " + book.getId());
 
-        /*
-        // Process upload file
-        if (file != null) {
-            logger.info("File name: " + file.getName());
-            logger.info("File size: " + file.getSize());
-            logger.info("File content type: " + file.getContentType());
-            byte[] fileContent = null;
-            try {
-                InputStream inputStream = file.getInputStream();
-                if (inputStream == null) logger.info("File inputstream is null");
-                fileContent = IOUtils.toByteArray(inputStream);
-                contact.setPhoto(fileContent);
-            } catch (IOException ex) {
-                logger.error("Error saving uploaded file");
-            }
-            contact.setPhoto(fileContent);
-        }
-        */
-
-        bookService.save(book);
+        //bookService.save(book);
         return "redirect:/books/";
     }
 
-    
-    /*
-    @RequestMapping(value = "/photo/{id}", method = RequestMethod.GET)
-    @ResponseBody
-    public byte[] downloadPhoto(@PathVariable("id") Long id) {
-        Contact contact = contactService.findById(id);
-
-        if (contact.getPhoto() != null) {
-            logger.info("Downloading photo for id: {} with size: {}", contact.getId(),
-                    contact.getPhoto().length);
-        }
-
-        return contact.getPhoto();
-    }
-    */
 
     @RequestMapping(params = "form", method = RequestMethod.GET)
     public String createForm(Model uiModel) {

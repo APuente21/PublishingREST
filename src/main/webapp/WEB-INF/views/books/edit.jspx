@@ -10,7 +10,7 @@
     <jsp:output omit-xml-declaration="yes"/>
 
     <spring:message code="label_book_new" var="labelBookNew"/>
-    <spring:message code="label_book_update" var="labelBooktUpdate"/>
+    <spring:message code="label_book_update" var="labelBookUpdate"/>
     <spring:message code="label_book_category" var="labelBookCategory"/>
     <spring:message code="label_book_isbn" var="labelBookIsbn"/>
     <spring:message code="label_book_title" var="labelBookTitle"/>
@@ -51,7 +51,7 @@
             <form:label path="title">
                 ${labelBookTitle}
             </form:label>
-            <form:input path="title" id="title"/>
+            <form:input path="title"/>
             <div>
                 <form:errors path="title" cssClass="error" />
             </div>
@@ -69,7 +69,7 @@
             <form:label path="price">
                 ${labelBookPrice}
             </form:label>
-            <form:input path="price" id="price"/>
+            <form:input path="price"/>
             <div>
                 <form:errors path="price" cssClass="error" />
             </div>
